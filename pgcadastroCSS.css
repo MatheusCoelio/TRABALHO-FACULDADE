@@ -1,0 +1,76 @@
+body {
+    background-color: #064789; /* Fundo preto */
+    color: white;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-color: #EBF2FA; /* Roxo escuro */
+    color: #064789;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {    
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #064789;
+    background-color: transparent;
+    color: #064789;
+    transition: border-bottom 0.2s;
+    
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-bottom: 2px solid #EBF2FA; /* Roxo escuro */
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #064789; /* Roxo escuro */
+    color: #EBF2FA; 
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #6A5ACD; /* Roxo mais claro */
+}
+
+.required-field::before {
+    content: "* ";
+    color: red;
+}
