@@ -7,26 +7,54 @@
     <link rel="stylesheet" type="text/css" href="pgcadastroCSS.css" />
 </head>
 <body>
+    <header>
+        <span id="logo" ><a href="PAGINA HOME.html"><img src="LOGO.png" width="80px" height="75px"></a></span>
+        <span id="menu">
+         <ul>
+            <li><a href="PAGINA HOME.html">INICIO</a></li>
+            <li><a href="PAGINA HOME.html">SOBRE</a></li>
+             <li><a href="PAGINA HOME.html">CONTATO</a></li>
+             <li><a href="">CADASTRE-SE</a></li>
+         </ul>
+         
+        </span>
+      </header>
+<div class="corpo">
     <div id="container">
-        <h2>Cadastro</h2>
+        <h2>CADASTRE-SE</h2>
+        <br>
         <form>
-            <label for="nome" class="required-field">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="nome" class="required-field">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
 
-            <label for="sobrenome" class="required-field">Sobrenome:</label>
-            <input type="text" id="sobrenome" name="sobrenome" required>
 
-            <label for="dataNascimento" class="required-field">Data de Nascimento:</label>
-            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            <label for="dataNascimento" class="required-field">Data de nascimento </label>
+            <input type="date" id="dataNascimento" name="dataNascimento" placeholder="Data de nascimento" required>
 
-            <label for="email" class="required-field">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email" class="required-field">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
-            <label for="telefone" class="required-field">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+            <label for="telefone" class="required-field">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone "required>
+            <br><br>
 
-            <input type="submit" value="Cadastrar">
+        <h3>Qual vaga você possui interesse?</h3>
+            <select required name="vagas" required id="vagas">
+                <option value="qualquer">selecione</option>
+                 <option value="adm">ADM</option>
+                 <option value="ti">TI</option>
+                 <option value="edfisica">Educação Fisica</option>
+                 <option value="mkt">Marketing</option>
+                 <option value="Enf">Enfermagem</option>
+            </select>
+            <br><br>
+
+            <p>*As vagas de emprego serão encaminhadas para o seu e-mail.</p>
+
+            <input type="submit" value="CADASTRAR">
         </form>
+        
     </div>
+</div>
 </body>
 </html>

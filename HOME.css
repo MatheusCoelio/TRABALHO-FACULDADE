@@ -1,13 +1,14 @@
 body{ background-color: #EBF2FA;
       margin: 0%;
-         
-   }
+}
 
 
 
 header { background-color: #064789;
     height: 70px;
+    margin: 0%;
     margin-top: -20px;
+    width: auto;
           
 }
 
@@ -54,7 +55,6 @@ header { background-color: #064789;
 
 
 #corpo {
-    
 
 }   
 
@@ -153,14 +153,18 @@ header { background-color: #064789;
     
     
 }*/
-
+@media (min-width: 768px)
+.mobile-only {
+    display: none!important;
+}
 .menu-fotos {
     margin: auto;
     overflow: hidden;
-    height: 900px;
-    width: 1840px;
-    display: flex;
+    height: 800px;
+    width: 1400px;
+    display:flex;
     position: relative;
+    object-fit: cover;
     
     
     
@@ -174,8 +178,10 @@ header { background-color: #064789;
 
 
 .foto img{
-    width: 1840px;
-    height: 900px;
+    object-fit: cover;
+    background: cover;
+    height: 800px;
+    width: 1400px;
     
 
     
@@ -187,13 +193,13 @@ header { background-color: #064789;
     
 
 .manual-navegation {
-    
-    width: 1000px;  
+
+    width: 700px;  
     display: flex;
     position: absolute;
     justify-content: center;
     margin-left: 23%;
-    margin-top: 40%;
+    margin-top: 50%;
     
 
 }
@@ -220,16 +226,19 @@ header { background-color: #064789;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1000px;
+    width: 1200px;
     margin: auto;
     margin-top: 300px;
     
 
 }
+.sobre1 h3 {
+    text-align: center;
+}
 
 .sobre1 {
     text-align: center  ;
-    height:200px;
+    height:500px;
     width: 500px;
     margin: auto;
     position: relative;
