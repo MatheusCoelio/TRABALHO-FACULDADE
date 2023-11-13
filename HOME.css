@@ -54,9 +54,7 @@ header { background-color: #064789;
 
 
 
-#corpo {
 
-}   
 
 
 .texto-pg-inicio {
@@ -120,43 +118,8 @@ header { background-color: #064789;
     margin-right: 30px;
 }
 
-/*.texto-pg-fotos {
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 300px;
-    
-    
- }
 
- .texto-pg-fotos h1 {
-    background-color: #064789;
-    color: #EBF2FA;
-    font-family: Arial;
-    width: 800px;
-    height: 100px;
-    text-align: center;
-    border-radius: 80px;
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   
-    
-    
-}*/
 
-/*.fotos1 {
-    background-color: green;
-    margin: 0%;
-    display: inline-flex;
-    
-    
-}*/
-@media (min-width: 768px)
-.mobile-only {
-    display: none!important;
-}
 .menu-fotos {
     margin: auto;
     overflow: hidden;
