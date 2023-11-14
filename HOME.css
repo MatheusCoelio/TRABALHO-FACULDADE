@@ -89,7 +89,7 @@ header { background-color: #064789;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 200px;
     
     
 }
@@ -119,15 +119,19 @@ header { background-color: #064789;
 }
 
 
-
-.menu-fotos {
-    margin: auto;
+#corpo{
+    margin: 0 auto;
     overflow: hidden;
     height: 800px;
     width: 1400px;
-    display:flex;
-    position: relative;
-    object-fit: cover;
+   
+
+
+}
+.menu-fotos {
+    height: 800px;
+    width: 500%;
+    display: flex;
     
     
     
@@ -137,19 +141,25 @@ header { background-color: #064789;
 
 .menu-fotos input {
     display: none;
-}
+}   
 
 
-.foto img{
-    object-fit: cover;
-    background: cover;
-    height: 800px;
-    width: 1400px;
+.foto {
+    border-bottom: blur 2px white;
+    width: 25%;
+   position: relative;
+   transition: 1s;
     
 
     
         
 }
+
+.foto img {
+    width: 1400px;
+    
+     
+ }
 
 
 
@@ -161,8 +171,8 @@ header { background-color: #064789;
     display: flex;
     position: absolute;
     justify-content: center;
-    margin-left: 23%;
-    margin-top: 50%;
+    align-self: self-end;
+     margin-left: 320px;
     
 
 }
@@ -172,7 +182,7 @@ header { background-color: #064789;
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 0,5;
 }
 .manual-btn:hover{
     background-color: #064789;
@@ -182,6 +192,86 @@ header { background-color: #064789;
 .manual-btn:not(:last-child){
     margin-right: 30px;
 }
+
+
+#radio1:checked ~.first{
+    margin-left:0;
+    
+
+}
+
+#radio2:checked ~.first{
+    margin-left: -25%;
+    
+
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+    
+
+}
+#radio4:checked ~.first{
+    margin-left: -75%;
+    
+
+}
+#radio5:checked ~.first{
+    margin-left: -100%;
+    
+
+}
+
+.navegation-foto div{
+    border: 2px solid #064789 ;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,5;
+
+}
+
+.navegation-foto {
+    width: 700px;  
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-self: self-end;
+     margin-left: 320px;
+
+}
+
+.navegation-foto div:not(:last-child){
+    margin-right: 30px;
+}
+
+
+#radio1:checked ~.navegation-foto .botao-foto1 {
+   background-color: #064789;
+    
+}
+
+#radio2:checked ~.navegation-foto .botao-foto2 {
+    background-color: #064789;
+     
+ }
+
+ #radio3:checked ~.navegation-foto .botao-foto3 {
+    background-color: #064789;
+     
+ }
+
+ #radio4:checked ~.navegation-foto .botao-foto4 {
+    background-color: #064789;
+     
+ }
+
+ #radio5:checked ~.navegation-foto .botao-foto5 {
+    background-color: #064789;
+     
+ }
+
+
+
 
 
 .sobre{
