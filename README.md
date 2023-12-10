@@ -11,7 +11,7 @@ Aqui você encontrará um site com a proposta para ser um local de vagas de empr
 <li>CSS</li>
 <li>JAVASCRIPT</li>
 <li>PHP</li>
-<BR> 
+
 ## Link para acesso
 
 
