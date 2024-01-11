@@ -85,7 +85,7 @@ body {
     </header>
 <div class= alerta>
     <?php
-    $conexao = mysqli_connect("localhost", "root","","cept");
+    $conexao = mysqli_connect("", "","","");
 
     //checar conexao
 
